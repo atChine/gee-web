@@ -1,25 +1,8 @@
-# Go Web Framework Gee from Scratch
-
-<details>
-<summary>README 说明</summary>
-<div>
-
 ## Go从零实现Web框架Gee
 
-### Content
+_此框架借鉴极客兔兔的知识和gin框架，仅供学习_
 
-- [第一天：前置知识(http.Handler接口)](https://geektutu.com/post/gee-day1.html)
-- [第二天：上下文设计(Context)](https://geektutu.com/post/gee-day2.html)
-- [第三天：Trie树路由(Router)](https://geektutu.com/post/gee-day3.html)
-- [第四天：分组控制(Group)](https://geektutu.com/post/gee-day4.html)
-- [第五天：中间件(Middleware)](https://geektutu.com/post/gee-day5.html)
-- [第六天：HTML模板(Template)](https://geektutu.com/post/gee-day6.html)
-- [第七天：错误恢复(Panic Recover)](https://geektutu.com/post/gee-day7.html)
-
-</div>
-</details>
-
-## Day 1 - Static Route
+##  Static Route
 
 ```go
 func main() {
@@ -38,7 +21,7 @@ func main() {
 }
 ```
 
-## Day 2 - Context Design
+##  Context Design
 
 ```go
 func main() {
@@ -62,7 +45,7 @@ func main() {
 }
 ```
 
-## Day 3 - Dynamic Route
+## Dynamic Route
 
 ```go
 func main() {
@@ -89,7 +72,7 @@ func main() {
 }
 ```
 
-## Day 4 - Nesting Group Control
+## Nesting Group Control
 
 ```go
 func main() {
@@ -124,7 +107,7 @@ func main() {
 }
 ```
 
-## Day 5 - Middleware
+## Middleware
 
 ```go
 func onlyForV2() gee.HandlerFunc {
@@ -158,7 +141,7 @@ func main() {
 }
 ```
 
-## Day 6 - HTML Template
+## HTML Template
 
 ```go
 type student struct {
@@ -203,7 +186,7 @@ func main() {
 }
 ```
 
-## Day 7 - Panic Recover
+## Panic Recover
 
 ```go
 func main() {
